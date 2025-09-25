@@ -1,0 +1,19 @@
+.masking {
+  display: flex;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 99;
+  background-color: black;
+}
+
+.masking::before {
+  z-index: 2;
+  padding-bottom: 5.208%;
+  margin-bottom: -4px;
+  bottom: 100%;
+  background-color: #000;
+  left: 0;
+  right: 0;
+  position: absolute;
+}

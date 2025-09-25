@@ -1,0 +1,249 @@
+.flexContainer {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.flexContainer::before {
+  content: url(../public/images/mask-top.png);
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  position: absolute;
+  opacity: 1;
+}
+
+.flexContainer > div {
+  position: relative;
+}
+
+.flexContainer .videoContainer {
+  background: rgba(0, 0, 0, 1);
+}
+
+.rectangles {
+  background-color: #000;
+  opacity: 0.9;
+  background-image: repeating-linear-gradient(
+      45deg,
+      #0a0a0a 25%,
+      transparent 25%,
+      transparent 75%,
+      #0a0a0a 75%,
+      #0a0a0a
+    ),
+    repeating-linear-gradient(
+      45deg,
+      #0a0a0a 25%,
+      #000 25%,
+      #000 75%,
+      #0a0a0a 75%,
+      #0a0a0a
+    );
+  background-position: 0 0, 4px 4px;
+  background-size: 8px 8px;
+}
+
+.halftone {
+  background-color: #000;
+  opacity: 0.8;
+  background-image: linear-gradient(45deg, #0a0a0a 50%, #000 50%);
+  background-size: 4px 4px;
+}
+
+.paper {
+  background-color: black;
+  opacity: 0.5;
+  background-image: linear-gradient(white 0.8px, transparent 0.8px),
+    linear-gradient(90deg, white 0.8px, transparent 0.8px),
+    linear-gradient(white 0.4px, transparent 0.4px),
+    linear-gradient(90deg, black 0.4px, black 0.4px);
+  background-size: 20px 20px, 20px 20px, 4px 4px, 4px 4px;
+  background-position: -0.8px -0.8px, -0.8px -0.8px, -0.4px -0.4px,
+    -0.4px -0.4px;
+}
+
+.rhombus {
+  background-color: #000;
+  opacity: 0.8;
+  background-image: linear-gradient(135deg, #0a0a0a 25%, transparent 25%),
+    linear-gradient(225deg, #0a0a0a 25%, transparent 25%),
+    linear-gradient(45deg, #0a0a0a 25%, transparent 25%),
+    linear-gradient(315deg, #0a0a0a 25%, #000 25%);
+  background-position: 4px 0, 4px 0, 0 0, 0 0;
+  background-size: 4px 4px;
+  background-repeat: repeat;
+}
+
+.zigzag {
+  background-color: #000;
+  opacity: 0.9;
+  background: linear-gradient(135deg, #0a0a0a55 25%, transparent 25%) -4px 0/
+      8px 8px,
+    linear-gradient(225deg, #0a0a0a 25%, transparent 25%) -4px 0/ 8px 8px,
+    linear-gradient(315deg, #0a0a0a55 25%, transparent 25%) 0px 0/ 8px 8px,
+    linear-gradient(45deg, #0a0a0a 25%, #000 25%) 0px 0/ 8px 8px;
+}
+
+.diagonal {
+  background-color: #000;
+  opacity: 0.9;
+  background: repeating-linear-gradient(
+    45deg,
+    #0a0a0a,
+    #0a0a0a 2px,
+    #000 2px,
+    #000 10px
+  );
+}
+
+.lines {
+  background-color: #000;
+  opacity: 0.9;
+  background-image: linear-gradient(0deg, #000 50%, #0a0a0a 50%);
+  background-size: 4px 4px;
+}
+
+.zigzag2 {
+  background-color: #000;
+  opacity: 0.9;
+  background-image: linear-gradient(135deg, #0a0a0a 25%, transparent 25%),
+    linear-gradient(225deg, #0a0a0a 25%, transparent 25%),
+    linear-gradient(45deg, #0a0a0a 25%, transparent 25%),
+    linear-gradient(315deg, #0a0a0a 25%, #000 25%);
+  background-position: 4px 0, 4px 0, 0 0, 0 0;
+  background-size: 8px 8px;
+  background-repeat: repeat;
+}
+
+.flexContainer .videoHeading {
+  position: absolute;
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  line-height: 48px;
+  opacity: 1;
+  justify-content: center;
+  padding: 200px 0;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.flexContainer .video {
+  width: 100vw;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.flexContainer .logo {
+  position: absolute;
+  width: 350px;
+}
+
+.video {
+  height: 100vh;
+  object-fit: fill;
+}
+
+.testing {
+  opacity: 1;
+}
+
+.tabs {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.featuredModels {
+  margin-top: 20px;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cardContainer > div {
+  margin: 5px;
+  padding: 10px;
+  font-size: 30px;
+  width: 400px;
+  padding-top: 100px;
+}
+
+.div1 {
+  background-color: blue;
+}
+
+.div2 {
+  background-color: yellow;
+}
+
+.div3 {
+  background-color: red;
+}
+
+.mask {
+  position: relative;
+  display: flex;
+}
+
+.mask::after {
+  content: url(../public/images/mask-bottom.png);
+  z-index: 2222222;
+
+  left: 0;
+  right: 0;
+
+  bottom: -90px;
+  position: absolute;
+}
+
+.cardContainer2 {
+  position: relative;
+}
+
+.cardInfo2 {
+  position: absolute;
+  display: none;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+}
+
+.cardContainer2:hover .cardInfo2 {
+  display: block;
+}
+
+.test:hover {
+  text-decoration: none;
+  background-color: transparent !important;
+  color: none;
+}
+
+.tabsDesign::after {
+  content: url(../public/images/mask-bottom.png);
+  width: 300px;
+  position: absolute;
+  bottom: -110px;
+  left: 0;
+}
