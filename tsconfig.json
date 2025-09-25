@@ -38,7 +38,8 @@
     "app/component/Battle/Battle.tsxBackup",
     "app/ui/Modal/Modal2.jsx",
     "app/rooms/page.jsx",
-    "components/NavBar/Navbar.jsx"
+    "components/NavBar/Navbar.jsx",
+    "components/ContactUs/ContactUs.jsx"
   ],
   "exclude": ["node_modules"]
 }

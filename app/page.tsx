@@ -9,6 +9,7 @@ import Facilities from "@/components/Facilities/Facilities";
 import Offers from "@/components/Offers/Offers";
 import Testimonial from "@/components/Testimonial/Testimonial";
 import Link from "next/link";
+import DemoChatbot from "@/components/DemoChatbot";
 
 const Page = () => {
   return (
@@ -21,6 +22,7 @@ const Page = () => {
       <Facilities />
       <Offers />
       <Testimonial />
+      <DemoChatbot />
     </div>
   );
 };
